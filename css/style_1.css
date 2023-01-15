@@ -1,0 +1,43 @@
+body
+
+ {
+  /* background-image:url(MAMP\htdocs\css/mir.jpg) */
+  background-color: #808080;
+  font-size: 2rem;
+  color: #66FFFF;
+
+    margin: 10px;
+    border: 5px dashed  #99FFFF;
+}
+
+form {
+  width: 300px;
+    font-size: red;
+  margin: 8px;
+  border: 4px dashed #99FFFF;
+
+}
+
+div {
+  margin: 10px;
+  border: 5px dashed #808080;
+}
+
+.test {
+  background-color: #808080;
+}
+
+.test:hover {
+  background-color: #696969;
+}
+
+div
+
+.test2 {
+  background-color: #808080;
+
+}
+
+.test2:hover {
+  background-color: ##696969;
+}
