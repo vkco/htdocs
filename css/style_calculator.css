@@ -17,8 +17,22 @@ white #fdfdfd
   color: #fff;
   font-family: Arial;
   padding: 18px;
-  box-shadow: 4px 4px 4px #4f4f4f;
+  box-shadow: 5px 5px 5px #4f4f4f;
 }
 .btn {
-  
+  width: 60px;
+  height: 60px;
+  color: #333;
+
+}
+.bg-grey {
+  width: 60px;
+  height: 60px;
+  color: #a6a6a6;
+
+}
+.bg-orange {
+  width: 60px;
+  height: 60px;
+  color: #ff9501;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <mate name="viewport" content="width=devise-width,initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="css\style_calc.css"
+    <link rel="stylesheet" href="css\style_calculator.css"
     </head>
     <body>
       <li><a href="/index.php">Exit</a></li>
@@ -15,27 +15,32 @@
       <div class="calc"> <!-- "calc"-->
         <div class="calc-screen"> <!-- "calc-screen"-->
         <p>A long, long time ago... </p>
+         <p>I can still remember</p>
         </div>
         <div class="buttons">
-          <div class="btn">ac</div>
-          <div class="btn">+/-</div>
-          <div class="btn">%</div>
-          <div class="btn">/</div>
-          <div class="btn">7</div>
-          <div class="btn">8</div>
-          <div class="btn">9</div>
-          <div class="btn">x</div>
-          <div class="btn">4</div>
-          <div class="btn">5</div>
-          <div class="btn">6</div>
-          <div class="btn">-</div>
-          <div class="btn">1</div>
-          <div class="btn">2</div>
-          <div class="btn">3</div>
-          <div class="btn">+</div>
-          <div class="btn">0</div>
-          <div class="btn">-</div>
-          <div class="btn">=</div>
+          <div class="btn ac bg-grey">ac</div>
+          <div class="btn plus-minus bg-grey">+/-</div>
+          <div class="btn precent bg-grey">%</div>
+          <div class="btn devide bg-orange">/</div>
+
+          <div class="btn seven">7</div>
+          <div class="btn eigth">8</div>
+          <div class="btn nine">9</div>
+          <div class="btn multiplication bg-orange">x</div>
+
+          <div class="btn fore">4</div>
+          <div class="btn five">5</div>
+          <div class="btn six">6</div>
+          <div class="btn minus bg-orange">-</div>
+
+          <div class="btn one">1</div>
+          <div class="btn two">2</div>
+          <div class="btn three">3</div>
+          <div class="btn plus bg-orange">+</div>
+
+          <div class="btn zero">0</div>
+          <div class="btn minus">-</div>
+          <div class="btn equals bg-orange">=</div>
   </div>
       </div>
     </body>
