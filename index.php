@@ -7,7 +7,7 @@
 </head>
 <body>
   <ul>
-  <li style="--i:5"><a href="/calculator.php">Calculator</a></li>
+  <li style="--i:5"><a href="/calculator.html">Calculator</a></li>
   <li style="--i:4"><a href="/clock_3.php">Clock</a></li>
   <li style="--i:3"><a href="/login.php">Login</a></li>
   <li style="--i:2"><a href="/test.php">Registration</a></li>
