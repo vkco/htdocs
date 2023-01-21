@@ -21,12 +21,12 @@ white #fdfdfd
 }
 .buttons {
   display: grid;
-  grid-template-areas:
- "ac plus-minus precent devide"
+ grid-template-areas:
+ "ac plus-minus precent devide";
  "seven eigth nine multiplication"
  "fore five six minus"
  "one two three plus"
- "zero minus equals" ;
+ "zero comma equals" ;
   grid-gap: 7px;
   justify-items: center;
 }
