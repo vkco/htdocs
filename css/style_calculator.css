@@ -7,6 +7,7 @@ orange #ff9501
 grey #a6a6a6
 white #fdfdfd
 */
+
 .calc{
   margin: 50px auto;
   width: 280px;
@@ -43,6 +44,7 @@ margin: 0;
 "zero comma equals" ;
   grid-gap: 7px;*/
   justify-items: center;
+  justify-content: center;
   gap: 25px;
 }
 .btn.zero {
