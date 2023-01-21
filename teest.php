@@ -8,9 +8,7 @@
 <body>
   <ul>
   <li style="--i:9"><a href="/index.php">Home</a></li>
-  <li style="--i:8"><a href="/call_3.0.php">калл версия 3</a></li>
-  <li style="--i:7"><a href="/calcylatop_2.php">от бухого меня </a></li>
-  <li style="--i:6"><a href="/calcylator.php">калькулятр суки</a></li>
+  <li style="--i:6"><a href="/calcylator.php">calcylator</a></li>
   <li style="--i:5"><a href="/jsl.php">JS_Lessons_2</a></li>
   <li style="--i:4"><a href="/youtube.php">Test_1.</a></li>
   <li style="--i:3"><a href="/test_2.php">Test_2.</a></li>

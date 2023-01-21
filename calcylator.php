@@ -28,7 +28,7 @@ $CalculatorResult = $FirstNumber / $SecondNumber;
 
 <body>
 <div id="page-wrap">
-<h1>пососи мой писос </h1>
+<h1> </h1>
 <form action="" method="post" id="quiz-form">
 <p>
 <input type="number" name="FirstNumber" id="FirstNumber" required="required" value="<?php echo $FirstNumber; ?>" /> <b>First Number</b>
