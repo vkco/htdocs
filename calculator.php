@@ -36,7 +36,7 @@
           <div class="btn two">2</div>
           <div class="btn three">3</div>
           <div class="btn plus bg-orange">+</div>
-          
+
           <div class="btn zero">0</div>
           <div class="btn minus">-</div>
           <div class="btn equals bg-orange">=</div>
@@ -44,3 +44,4 @@
       </div>
     </body>
     </html>
+  
