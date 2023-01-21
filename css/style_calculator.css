@@ -9,7 +9,7 @@ white #fdfdfd
 */
 .calc{
   margin: 50px auto;
-  width: 300px;
+  width: 280px;
   height: 390px;
 /*  border: 1px solid #000;*/
   border-radius: 20px;
@@ -18,6 +18,19 @@ white #fdfdfd
   font-family: Arial;
   padding: 18px;
   box-shadow: 40px 40px 40px #4f4f4f;
+}
+.calc-screen {
+  height: 55px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.calc-screen p {
+text-align: right;
+font-size: 3rem;
+margin: 0;
 }
 .buttons {
   display: flex; /*grid*/
@@ -57,7 +70,7 @@ white #fdfdfd
   background: #ff9501;
 }
 .btn:hover {
-  filter: brightness(140%);
+  filter: brightness(150%);
 }
 .btn:active {
   filter: brightness(80%);
