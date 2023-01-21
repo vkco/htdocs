@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CSS Isometric Menu</title>
+  <title>Menu</title>
   <link rel="stylesheet" href="CSS/style_4.css">
 </head>
 <body>
