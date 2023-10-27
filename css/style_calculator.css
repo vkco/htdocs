@@ -45,7 +45,7 @@ margin: 0;
   grid-gap: 7px;*/
   justify-items: center;
   justify-content: center;
-  /* gap: 25px */;
+  /* gap: 25px */
 }
 .btn.zero {
   grid-area: zero;

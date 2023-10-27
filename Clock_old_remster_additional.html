@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Clock</title>
+  <style>
+
+  .number_container {
+    position: relative;
+    left: 50%;
+    top:25%;
+  }
+    .number {
+      position: absolute;
+    /*  width: 400px;
+      height: 400px; */
+      text-align: center;
+      line-height: 400px;
+      font-size: 2em;
+      transform-origin: center bottom;
+      /* left: 50%; */
+            /* top: 50%; */
+      opacity: 1; /* Изменено с '0' на '1' */
+      /* transform: translate(-50%, -50%);  Добавлено для центрирования */
+    }
+
+    .home-button {position: absolute;
+        top: 10px;
+        right: 80px;
+        display: inline-block;
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        background-color: #ff2972;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;}
+
+    .home-button:hover {
+        background-color: #ff5c95;}
+
+    .refresh-button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: inline-block;
+          padding: 10px 20px;
+          color: white;
+          background-color: #007BFF;
+          text-decoration: none;
+          border-radius: 5px;
+    }
+
+    .refresh-button:hover {
+          background-color: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+<a href="/GPT.html" class="home-button">🏠</a>
+
+<a href="/Clock_old_remster_additional.html" class="refresh-button">	↻ </a>
+<div class="number_container">
+
+<div class="number" id="number1" style="transform: rotate(30deg);">1</div>
+<div class="number" id="number2" style="transform: rotate(60deg);">2</div>
+
+<div class="number" id="number3" style="transform: rotate(90deg);">3</div>
+<div class="number" id="number4" style="transform: rotate(120deg);">4</div>
+<div class="number" id="number5" style="transform: rotate(150deg);">5</div>
+<div class="number" id="number6" style="transform: rotate(180deg);">6</div>
+<div class="number" id="number7" style="transform: rotate(210deg);">7</div>
+<div class="number" id="number8" style="transform: rotate(240deg);">8</div>
+<div class="number" id="number9" style="transform: rotate(270deg);">9</div>
+<div class="number" id="number10" style="transform: rotate(300deg);">10</div>
+<div class="number" id="number11" style="transform: rotate(330deg);">11</div>
+<div class="number" id="number12" style="transform: rotate(360deg);">12</div>
+</div>
+</body>
+</html>

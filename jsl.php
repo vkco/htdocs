@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>JS_Lessons_2</title>
+    <link rel="stylesheet" href="css\style_calculator0.css"
 </head>
 <body>
   <style></style>

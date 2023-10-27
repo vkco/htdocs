@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>сlock</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Anton', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #acbaca;
+    }
+    .сlock {
+      position: relative;
+      display: flex;
+      gap: 20px;
+    }
+    .сlock .digital {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #c9d5e0;
+    }
+    .home-button {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       display: inline-block;
+       font-size: 1em;
+       text-decoration: none;
+       color: white;
+       background-color: #ff2972;
+       padding: 10px 20px;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+     }
+     .home-button:hover {
+       background-color: #ff5c95;
+     }
+    </style>
+  </head>
+
+<body>
+<a href="teest.php" class="home-button">Вернуться на главную</a>
+<div class="сlock">
+
+  <div class="digital" style="--clr:#ff2972;">
+    <div class="screen" data-text="hours">
+      <div class="time">
+        <div id="hour"></div>
+      </div>
+    </div>
+</div>
+
+  <div class="digital" style="--clr:#fee800;">
+    <div class="screen" data-text="minutes">
+      <div class="time">
+        <div id="minutes"></div>
+      </div>
+    </div>
+</div>
+
+  <div class="digital" style="--clr:#04fc43;">
+    <div class="screen" data-text="second">
+      <div class="time">
+        <div id="second"></div>
+      </div>
+    </div>
+</div>
+
+<div class="digital">
+  <div class="box" id="hr1" style="--clr:#04fc43"></div>
+  <div class="box" id="hr2" style="--clr:#fee800"></div>
+  <div class="box" id="hr3" style="--clr:#04fc43"></div>
+  <div id="ampm"> </div>
+</div>
+
+<script>
+let hours = document.getElementById('hour');
+let minutes = document.getElementById('minutes');
+let second = document.getElementById('second');
+let ampm = document.getElementById('ampm');
+
+setInterval(()=>{
+  let date = new Date();
+  let h = date.getHours();
+  let m = date.getMinutes();
+  let s = date.getSeconds();
+
+var am = h >=12 ? 'pm' : 'am';
+
+// convert 24hts Clock to 12hours clock
+if (h > 12 ){
+  h = h -12;
+}
+// add zero before single digital number
+h = (h < 10) ? "0" + h : h
+m = (m < 10) ? "0" + m : m
+s = (s < 10) ? "0" + s : s
+
+
+  hours.innerHTML = h;
+  minutes.innerHTML = m;
+  second.innerHTML = s;
+  ampm.innerHTML = am;
+
+})
+
+</script>
+
+</body>
+</html>
