@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Получить IP-адрес</title>
+    <style>
+        body {
+            /* Здесь вы можете добавить стили для body, если это необходимо */
+        }
+        .home-button {
+            position: absolute;
+            top: 10px;
+            right: 80px;
+            display: inline-block;
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            background-color: #ff2972;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #ff5c95;
+        }
+    </style>
+</head>
+<body>
+  <a href="/GPT.html" class="home-button">🏠</a>
+    <h1>Ваш IP-адрес:</h1>
+    <p id="ip"></p>
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').textContent = data.ip;
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+                document.getElementById('ip').textContent = 'Не удалось получить IP-адрес';
+            });
+    </script>
+</body>
+</html>
