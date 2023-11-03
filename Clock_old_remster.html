@@ -138,7 +138,7 @@
           transform-origin: center bottom;
           /*left: 49%;
           top: 18%;*/
-          opacity: 1; /* Изменено с '0' на '1' */
+          opacity: 0; /* Изменено с '0' на '1' */
           /* transform: translate(-50%, -50%);  Добавлено для центрирования */
           transition: opacity 0.5s ease-in-out;}
         .snumber.active {
@@ -210,7 +210,7 @@ if (typeof h !== 'undefined' && typeof m !== 'undefined' && typeof s !== 'undefi
 
     if (s%5 == 0){
         var secondElement = document.getElementById('snumber' + s);
-        var prevSecondElement = document.getElementById('snumber' + ((s-1)>= 0? s-1 : s-1+60));
+        var prevSecondElement = document.getElementById('snumber' + ((s-5)>= 0? s-5 : s-5+60));
         if(secondElement && prevSecondElement){
             secondElement.classList.add('active');
             prevSecondElement.classList.remove('active');
@@ -262,69 +262,18 @@ if (typeof h !== 'undefined' && typeof m !== 'undefined' && typeof s !== 'undefi
   <div class="mnumber" id="mnumber0" style="transform: rotate(360deg);">0</div>
   </div>
 <div class="number_container">
-
-  <div class="snumber" id="snumber1" style="transform: rotate(6deg);">1</div>
-  <div class="snumber" id="snumber2" style="transform: rotate(12deg);">2</div>
-  <div class="snumber" id="snumber3" style="transform: rotate(18deg);">3</div>
-  <div class="snumber" id="snumber4" style="transform: rotate(24deg);">4</div>
-  <div class="snumber" id="snumber5" style="transform: rotate(30deg);">5</div>
-  <div class="snumber" id="snumber6" style="transform: rotate(36deg);">6</div>
-  <div class="snumber" id="snumber7" style="transform: rotate(42deg);">7</div>
-  <div class="snumber" id="snumber8" style="transform: rotate(48deg);">8</div>
-  <div class="snumber" id="snumber9" style="transform: rotate(54deg);">9</div>
-  <div class="snumber" id="snumber10" style="transform: rotate(60deg);">10</div>
-  <div class="snumber" id="snumber11" style="transform: rotate(66deg);">11</div>
-  <div class="snumber" id="snumber12" style="transform: rotate(72deg);">12</div>
-  <div class="snumber" id="snumber13" style="transform: rotate(78deg);">13</div>
-  <div class="snumber" id="snumber14" style="transform: rotate(84deg);">14</div>
-  <div class="snumber" id="snumber15" style="transform: rotate(90deg);">15</div>
-  <div class="snumber" id="snumber16" style="transform: rotate(96deg);">16</div>
-  <div class="snumber" id="snumber17" style="transform: rotate(102deg);">17</div>
-  <div class="snumber" id="snumber18" style="transform: rotate(108deg);">18</div>
-  <div class="snumber" id="snumber19" style="transform: rotate(114deg);">19</div>
-  <div class="snumber" id="snumber20" style="transform: rotate(120deg);">20</div>
-  <div class="snumber" id="snumber21" style="transform: rotate(126deg);">21</div>
-  <div class="snumber" id="snumber22" style="transform: rotate(132deg);">22</div>
-  <div class="snumber" id="snumber23" style="transform: rotate(138deg);">23</div>
-  <div class="snumber" id="snumber24" style="transform: rotate(144deg);">24</div>
-  <div class="snumber" id="snumber25" style="transform: rotate(150deg);">25</div>
-  <div class="snumber" id="snumber26" style="transform: rotate(156deg);">26</div>
-  <div class="snumber" id="snumber27" style="transform: rotate(162deg);">27</div>
-  <div class="snumber" id="snumber28" style="transform: rotate(168deg);">28</div>
-  <div class="snumber" id="snumber29" style="transform: rotate(174deg);">29</div>
-  <div class="snumber" id="snumber30" style="transform: rotate(180deg);">30</div>
-  <div class="snumber" id="snumber31" style="transform: rotate(186deg);">31</div>
-  <div class="snumber" id="snumber32" style="transform: rotate(192deg);">32</div>
-  <div class="snumber" id="snumber33" style="transform: rotate(198deg);">33</div>
-  <div class="snumber" id="snumber34" style="transform: rotate(204deg);">34</div>
-  <div class="snumber" id="snumber35" style="transform: rotate(210deg);">35</div>
-  <div class="snumber" id="snumber36" style="transform: rotate(216deg);">36</div>
-  <div class="snumber" id="snumber37" style="transform: rotate(222deg);">37</div>
-  <div class="snumber" id="snumber38" style="transform: rotate(228deg);">38</div>
-  <div class="snumber" id="snumber39" style="transform: rotate(234deg);">39</div>
-  <div class="snumber" id="snumber40" style="transform: rotate(240deg);">40</div>
-  <div class="snumber" id="snumber41" style="transform: rotate(246deg);">41</div>
-  <div class="snumber" id="snumber42" style="transform: rotate(252deg);">42</div>
-  <div class="snumber" id="snumber43" style="transform: rotate(258deg);">43</div>
-  <div class="snumber" id="snumber40" style="transform: rotate(264deg);">44</div>
-  <div class="snumber" id="snumber41" style="transform: rotate(270deg);">45</div>
-  <div class="snumber" id="snumber46" style="transform: rotate(276deg);">46</div>
-  <div class="snumber" id="snumber47" style="transform: rotate(282deg);">47</div>
-  <div class="snumber" id="snumber48" style="transform: rotate(288deg);">48</div>
-  <div class="snumber" id="snumber49" style="transform: rotate(294deg);">49</div>
-  <div class="snumber" id="snumber50" style="transform: rotate(300deg);">50</div>
-  <div class="snumber" id="snumber51" style="transform: rotate(306deg);">51</div>
-  <div class="snumber" id="snumber52" style="transform: rotate(312deg);">52</div>
-  <div class="snumber" id="snumber53" style="transform: rotate(318deg);">53</div>
-  <div class="snumber" id="snumber54" style="transform: rotate(324deg);">54</div>
-  <div class="snumber" id="snumber55" style="transform: rotate(330deg);">55</div>
-  <div class="snumber" id="snumber56" style="transform: rotate(336deg);">56</div>
-  <div class="snumber" id="snumber57" style="transform: rotate(342deg);">57</div>
-  <div class="snumber" id="snumber58" style="transform: rotate(348deg);">58</div>
-  <div class="snumber" id="snumber56" style="transform: rotate(354deg);">59</div>
-  <div class="snumber" id="snumber57" style="transform: rotate(360deg);">60</div>
-
-
+<div class="snumber" id="snumber5" style="transform: rotate(30deg);">5</div>
+<div class="snumber" id="snumber10" style="transform: rotate(60deg);">10</div>
+<div class="snumber" id="snumber15" style="transform: rotate(90deg);">15</div>
+<div class="snumber" id="snumber20" style="transform: rotate(120deg);">20</div>
+<div class="snumber" id="snumber25" style="transform: rotate(150deg);">25</div>
+<div class="snumber" id="snumber30" style="transform: rotate(180deg);">30</div>
+<div class="snumber" id="snumber35" style="transform: rotate(210deg);">35</div>
+<div class="snumber" id="snumber40" style="transform: rotate(240deg);">40</div>
+<div class="snumber" id="snumber45" style="transform: rotate(270deg);">45</div>
+<div class="snumber" id="snumber50" style="transform: rotate(300deg);">50</div>
+<div class="snumber" id="snumber55" style="transform: rotate(330deg);">55</div>
+<div class="snumber" id="snumber0" style="transform: rotate(360deg);">0</div>
 </div>
 </div>
 
