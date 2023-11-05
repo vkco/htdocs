@@ -34,7 +34,6 @@
   echo "это: $str";
   echo "<input type='текст'><br>";
 
-
   $length = strlen($str);   //получение длины текста
   echo trim("   какая е то лютая дичь    ");  // trim удаление пробелов до и после строки
   echo mb_strtoupper ( trim (" какая е то лютая дичь ")). '<br>' ;
