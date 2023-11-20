@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>сlock</title>
+  <title>clock</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     * {
@@ -18,12 +18,12 @@
       min-height: 100vh;
       background: #acbaca;
     }
-    .сlock {
+    .clock {
       position: relative;
       display: flex;
       gap: 20px;
     }
-    .сlock .digital {
+    .clock .digital {
       position: relative;
       width: 120px;
       height: 120px;
@@ -32,13 +32,12 @@
       align-items: center;
       background: #c9d5e0;
       border-radius: 30px;
-
       box-shadow: 20px 20px 20px -10px rgba(0,0,0,0.15),
       inset 15px 15px 10px rgba(255,255,255,0.5),
       -15px -15px 35px rgba(255,255,255,0.35),
       inset -1px -1px 10px rgba(0,0,0,0.2);
     }
-      .сlock .digital .screen {
+      .clock .digital .screen {
         position: absolute;
         inset: 20px;
         background: #152b4a;
@@ -47,7 +46,7 @@
         inset 5px 5px 5px rgba(255,255,255,0.35),
         -6px -6px 10px rgba(255,255,255,1);
       }
-      .сlock .digital .screen::before{
+      .clock .digital .screen::before{
         content: attr(data-text);
         position: absolute;
         bottom: -21px;
@@ -57,26 +56,50 @@
         color: #333;
         text-transform: uppercase;
       }
-      .сlock .digital .time {
+      .clock .digital .time {
           position: absolute;
           inset: 0;
           display: flex;
           justify-content: center;
           align-items: center;
       }
-      .сlock .digital .time div {
+      .clock .digital .time div {
         position: relative;
         font-size: 2.9em;
         color: var(--clr);
         letter-spacing: 0.1em;
         margin-left: 0.1em;
       }
-/*11:05*/
-      .сlock .digital:nth-last-child(2) .time div {
-      color: transparent;
+
+      .clock .digital .time div { /*  .clock .digital:nth-last-child(2)  .time div - в оригинале но код не понимал части ":nth-last-child(2)"  */
+      color: transparent ;
         -webkit-text-stroke: 2px var(--clr);
       }
-
+  /*12:38*/
+      .clock .digital:last-child::before{ /*эта часть не раб */
+        content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #152b4a;
+  border: 2px solid #fff;
+  z-index: 100000;
+  border-radius: 50%;
+      }
+      /*12:10*/
+.clock .digital:last-child::after { /*эта часть не раб */
+    content: '';
+  position: absolute;
+inset: 20px;
+background: #152b4a;
+border-radius: 50%;
+box-shadow: 5px 5px 15px 0 #152b4a66,
+inset 5px 5px 5px rgba(255,255,255,0.35),
+-6px -6px 10px rgba(255,255,255,1);
+}
+#ampm{ /*эта часть не раб */
+  position: absolute;
+}
     .home-button {
        position: absolute;
        top: 10px;
@@ -95,11 +118,9 @@
      }
     </style>
   </head>
-
 <body>
 <a href="teest.php" class="home-button">Вернуться на главную</a>
-<div class="сlock">
-
+<div class="clock">
   <div class="digital" style="--clr:#ff2972;">
     <div class="screen" data-text="hours">
       <div class="time">
@@ -107,7 +128,6 @@
       </div>
     </div>
 </div>
-
   <div class="digital" style="--clr:#fee800;">
     <div class="screen" data-text="minutes">
       <div class="time">
@@ -115,7 +135,6 @@
       </div>
     </div>
 </div>
-
   <div class="digital" style="--clr:#04fc43;">
     <div class="screen" data-text="second">
       <div class="time">
@@ -123,28 +142,23 @@
       </div>
     </div>
 </div>
-
 <div class="digital">
   <div class="box" id="hr1" style="--clr:#04fc43"></div>
   <div class="box" id="hr2" style="--clr:#fee800"></div>
   <div class="box" id="hr3" style="--clr:#04fc43"></div>
   <div id="ampm"> </div>
 </div>
-
 <script>
 let hours = document.getElementById('hour');
 let minutes = document.getElementById('minutes');
 let second = document.getElementById('second');
 let ampm = document.getElementById('ampm');
-
 setInterval(()=>{
   let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
   let s = date.getSeconds();
-
 var am = h >=12 ? 'pm' : 'am';
-
 // convert 24hts Clock to 12hours clock
 if (h > 12 ){
   h = h -12;
@@ -153,13 +167,10 @@ if (h > 12 ){
 h = (h < 10) ? "0" + h : h
 m = (m < 10) ? "0" + m : m
 s = (s < 10) ? "0" + s : s
-
-
   hours.innerHTML = h;
   minutes.innerHTML = m;
   second.innerHTML = s;
   ampm.innerHTML = am;
-
 })
 </script>
 </body>
