@@ -7,17 +7,22 @@
 		$name = $_POST['name'];
 		$message = $_POST['message'];
 
-		$sql = "INSERT INTO demo (name, message)
-		VALUES ('$name', '$message')";
+		if (!empty($name) && !empty($message)) {
+			$sql = "INSERT INTO demo (name, message)
+			VALUES ('$name', '$message')";
 
-		if ($conn->query($sql) === TRUE) {
-		  echo "";
+			if ($conn->query($sql) === TRUE) {
+			  echo "Комментарий успешно добавлен!";
+			} else {
+			  echo "Ошибка: " . $sql . "<br>" . $conn->error;
+			}
 		} else {
-		  echo "Mistake: " . $sql . "<br>" . $conn->error;
+			echo "Пожалуйста, заполните все поля!";
 		}
 	}
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
