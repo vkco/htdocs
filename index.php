@@ -7,6 +7,7 @@
 </head>
 <body>
   <ul>
+  <li style="--i:7"><a href="/it-incubator_HW.html">it-incubator HW</a></li>
   <li style="--i:6"><a href="/calculator.html">Calculator</a></li>
   <li style="--i:5"><a href="/Clock_old_remster.html">Clock</a></li>
   <li style="--i:4"><a href="/login.php">Login</a></li>
