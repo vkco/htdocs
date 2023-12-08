@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>it-incubator</title>
     <style>
+      /* Общие стили для всего документа */
       body {
             margin: 0; /* убирает отступы по умолчанию */
           }
+      /* Стили для синей полоски */
       .blue-bar {
-
             width: 1400px;
             height: 76px;
             background-color: #0A61F7;
         }
+      /* Стили для контейнера кнопок */
         .button-container {
             position: absolute;
             top: 0;
@@ -20,6 +22,7 @@
             display: flex;
             gap: 10px;
         }
+      /* Стили для кнопок */
         .button {
             display: inline-block;
             background-color: blue;
@@ -28,6 +31,7 @@
             text-align: center;
             text-decoration: none;
         }
+      /* Стили для логотипа */
         img.logo {
             position: absolute;
             width: 208.64px;
@@ -35,23 +39,28 @@
             top: 14px;
             left: 130px;
           }
+      /* Стили для фотографии */
            img.photo  {
                  width: 656px;
                  height: 650px;
                  border-radius: 10px 10px 0px 0px;
                  float: right; /* добавил свойство float для изображения */
                }
+      /* Стили для области с контентом */
                .content-area {
                    margin-top: 100px;
                    width: 50%; /* добавил свойство width для блока с текстом */
                }
-               .content-area h2 {
+      /* Стили для заголовка */
+               .content-area h1 {
                    text-align: center;
                }
+      /* Стили для абзаца */
                .content-area p {
                    text-align: justify;
                    padding: 0 10%;
                }
+      /* Стили для ссылки */
                .content-area a {
                    display: block;
                    width: 200px;
@@ -63,42 +72,6 @@
                    margin: 20px 0;
                    text-decoration: none;
                }
-        .button-container {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;
-            gap: 10px;
-        }
-        .button {
-            display: inline-block;
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .content-area {
-            margin-top: 100px;
-        }
-        .content-area h2 {
-            text-align: center;
-        }
-        .content-area p {
-            text-align: justify;
-            padding: 0 10%;
-        }
-        .content-area a {
-            display: block;
-            width: 200px;
-            height: 50px;
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 10px 20px;
-            margin: 20px 0;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
@@ -110,14 +83,10 @@
         <a href="/it-incubator_HW.html" class="button">CREATE ACCOUNT</a>
     </div>
     <div class="content-area">
-      <div style="width: 1400px; height: 800px; top: 76px; position: absolute;">
-<h1>Markup achievement</h1>
-</div>
+      <h1>Markup achievement</h1>
         <p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
-        <a href="/it-incubator_HW.html" style="width: 152px; height: 50px; top: 578px; left: 130px; position: absolute; display: block; background-color: blue; color: white; text-align: center; text-decoration: none; padding: 10px 20px;">LEARN MORE</a>
+        <a href="/it-incubator_HW.html">LEARN MORE</a> 
     </div>
  <img src="2.jpg" class="photo">
-
-
 </body>
 </html>
