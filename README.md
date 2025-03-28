@@ -1,2 +1,2 @@
 hello
-[clock](index.html)
+[clock](Clock_GPT.html)
