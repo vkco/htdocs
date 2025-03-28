@@ -1,1 +1,2 @@
 hello
+[clock](index.html)
